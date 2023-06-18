@@ -28,10 +28,11 @@
       *{font-family:'Poppins', sans-serif;outline:none}body{background-color:blue;text-align:center;font-weight:bold}#name1{font-weight:bolder;font-size:30px;text-align:center;background-color:transparent;border:transparent;height:50px;width:300px;cursor:text}#items{width:300px;background-color:white;margin:auto;border-radius:5px}input{background-color:transparent;border:transparent;transition:all 0.25s;height:40px;width:200px}button{background-color:transparent;border:transparent;height:42px;width:40px;border-radius:5px;transition:all 0.25s;cursor:pointer}button:hover{background-color:gainsboro}button:active{background-color:lightgray}#reset{width:250px;height:40px;background-color:gainsboro;border-radius:50px;border:transparent}#reset:hover{background-color:lightgray}#reset:active{transform:scale(0.95)}
     </style>
     <script>
-
+document.getElementById("item1").value = localStorage.getItem ("a");
+	    
       setInterval(function () {
         localStorage.setItem ("a",document.getElementById("item1").value);
-        document.getElementById("item1").value = localStorage.getItem ("a");
+        
      }, 1);
       
 // -------------------------- //
