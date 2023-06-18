@@ -8,7 +8,7 @@
 	</head>
 	<body>
         <br>
-        <input placeholder="List Name Here..." id = "name1" value = "Unnamed List" />
+        <input placeholder="List Name Here..." id = "name1" value = "New List" />
         <br>
         <br>
 		<div id = "items">
@@ -35,7 +35,8 @@ document.getElementById("item1").value = localStorage.getItem ("a");document.get
 	    
       setInterval(function () {
         localStorage.setItem ("a",document.getElementById("item1").value);localStorage.setItem ("b",document.getElementById("item2").value);localStorage.setItem ("c",document.getElementById("item3").value);localStorage.setItem ("d",document.getElementById("item4").value);localStorage.setItem ("e",document.getElementById("item5").value);localStorage.setItem ("f",document.getElementById("item6").value);localStorage.setItem ("g",document.getElementById("item7").value);localStorage.setItem ("h",document.getElementById("item8").value);localStorage.setItem ("i",document.getElementById("item9").value);localStorage.setItem ("j",document.getElementById("item10").value);localStorage.setItem ("k",document.getElementById("name1").value);
-     }, 1);
+     	document.title = document.getElementById ("name1").value =+ "list";
+      }, 1);
       
 // -------------------------- //
 
@@ -266,7 +267,7 @@ function striket10 () {
 
 function reset () {
     if(confirm("Are you sure you want to reset your list? This includes all items and list name and can not be undone.")) {
-        document.getElementById ("item1").value = "";document.getElementById ("item2").value = "";document.getElementById ("item3").value = "";document.getElementById ("item4").value = "";document.getElementById ("item5").value = "";document.getElementById ("item6").value = "";document.getElementById ("item7").value = "";document.getElementById ("item8").value = "";document.getElementById ("item9").value = "";document.getElementById ("item10").value = "";document.getElementById ("name1").value = "Unnamed List";
+        document.getElementById ("item1").value = "";document.getElementById ("item2").value = "";document.getElementById ("item3").value = "";document.getElementById ("item4").value = "";document.getElementById ("item5").value = "";document.getElementById ("item6").value = "";document.getElementById ("item7").value = "";document.getElementById ("item8").value = "";document.getElementById ("item9").value = "";document.getElementById ("item10").value = "";document.getElementById ("name1").value = "New List";
         document.getElementById ("item1").disabled = false;document.getElementById ("item2").disabled = false;document.getElementById ("item3").disabled = false;document.getElementById ("item4").disabled = false;document.getElementById ("item5").disabled = false;document.getElementById ("item6").disabled = false;document.getElementById ("item7").disabled = false;document.getElementById ("item8").disabled = false;document.getElementById ("item9").disabled = false;document.getElementById ("item10").disabled = false;
         document.getElementById ("item1").style.textDecoration = "none";document.getElementById ("item2").style.textDecoration = "none";document.getElementById ("item3").style.textDecoration = "none";document.getElementById ("item4").style.textDecoration = "none";document.getElementById ("item5").style.textDecoration = "none";document.getElementById ("item6").style.textDecoration = "none";document.getElementById ("item7").style.textDecoration = "none";document.getElementById ("item8").style.textDecoration = "none";document.getElementById ("item9").style.textDecoration = "none";document.getElementById ("item10").style.textDecoration = "none";
     	localStorage.clear();
