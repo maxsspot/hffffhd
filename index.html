@@ -29,6 +29,54 @@
       *{font-family:'Poppins', sans-serif;outline:none}body{background-color:blue;text-align:center;font-weight:bold}#name1{font-weight:bolder;font-size:30px;text-align:center;background-color:transparent;border:transparent;height:50px;width:300px;cursor:text}#items{width:300px;background-color:white;margin:auto;border-radius:5px}input{background-color:transparent;border:transparent;transition:all 0.25s;height:40px;width:200px}button{background-color:transparent;border:transparent;height:42px;width:40px;border-radius:5px;transition:all 0.25s;cursor:pointer}button:hover{background-color:gainsboro}button:active{background-color:lightgray}#reset{width:250px;height:40px;background-color:gainsboro;border-radius:50px;border:transparent}#reset:hover{background-color:lightgray}#reset:active{transform:scale(0.95)}
     </style>
     <script>
+	    if (localStorage.getItem ("1t") == "fake") {
+		document.getElementById ("item1").style.textDecoration = "line-through";
+        	document.getElementById ("item1").disabled = true;
+        	enabled1 = false;
+	    /*} else if (localStorage.getItem ("2t") == "fake") {
+		document.getElementById ("item2").style.textDecoration = "line-through";
+        	document.getElementById ("item2").disabled = true;
+        	enabled2 = false;
+	    } else if (localStorage.getItem ("3t") == "fake") {
+		document.getElementById ("item3").style.textDecoration = "line-through";
+        	document.getElementById ("item3").disabled = true;
+        	enabled3 = false;
+	    } else if (localStorage.getItem ("4t") == "fake") {
+		document.getElementById ("item4").style.textDecoration = "line-through";
+        	document.getElementById ("item4").disabled = true;
+        	enabled4 = false;
+	    } else if (localStorage.getItem ("5t") == "fake") {
+		document.getElementById ("item5").style.textDecoration = "line-through";
+        	document.getElementById ("item5").disabled = true;
+        	enabled5 = false;
+	    } else if (localStorage.getItem ("1t") == "fake") {
+		document.getElementById ("item1").style.textDecoration = "line-through";
+        	document.getElementById ("item1").disabled = true;
+        	enabled1 = false;
+	    } else if (localStorage.getItem ("6t") == "fake") {
+		document.getElementById ("item6").style.textDecoration = "line-through";
+        	document.getElementById ("item6").disabled = true;
+        	enabled6 = false;
+	    } else if (localStorage.getItem ("7t") == "fake") {
+		document.getElementById ("item7").style.textDecoration = "line-through";
+        	document.getElementById ("item7").disabled = true;
+        	enabled7 = false;
+	    } else if (localStorage.getItem ("8t") == "fake") {
+		document.getElementById ("item8").style.textDecoration = "line-through";
+        	document.getElementById ("item8").disabled = true;
+        	enabled8 = false;
+	    } else if (localStorage.getItem ("9t") == "fake") {
+		document.getElementById ("item9").style.textDecoration = "line-through";
+        	document.getElementById ("item9").disabled = true;
+        	enabled9 = false;
+	    } else if (localStorage.getItem ("10t") == "fake") {
+		document.getElementById ("item10").style.textDecoration = "line-through";
+        	document.getElementById ("item10").disabled = true;
+        	enabled1 = false;
+	    } */else {
+
+	    }
+	    
 document.getElementById("item1").value = localStorage.getItem ("a");document.getElementById("item2").value = localStorage.getItem ("b");document.getElementById("item3").value = localStorage.getItem ("c");document.getElementById("item4").value = localStorage.getItem ("d");document.getElementById("item5").value = localStorage.getItem ("e");document.getElementById("item6").value = localStorage.getItem ("f");document.getElementById("item7").value = localStorage.getItem ("g");document.getElementById("item8").value = localStorage.getItem ("h");document.getElementById("item9").value = localStorage.getItem ("i");document.getElementById("item10").value = localStorage.getItem ("j");document.getElementById("name1").value = localStorage.getItem ("k");
 	    
       setInterval(function () {
@@ -50,10 +98,12 @@ function striket1 () {
         document.getElementById ("item1").style.textDecoration = "line-through";
         document.getElementById ("item1").disabled = true;
         enabled1 = false;
+	localStorage.setItem ("1t","fake");
     } else {
         document.getElementById ("item1").style.textDecoration = "none";
         document.getElementById ("item1").disabled = false;
         enabled1 = true;
+	localStorage.setItem ("1t","");
     }
 }
 
