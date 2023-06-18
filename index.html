@@ -26,7 +26,7 @@
         <br>
         <button id = "reset" onclick = "reset()">RESET</button>
     <style>
-      *{font-family:'Poppins', sans-serif;outline:none}body{background-color:blue;text-align:center;font-weight:bold}#name1{font-weight:bolder;font-size:30px;text-align:center;background-color:transparent;border:transparent;height:50px;width:300px;cursor:text}#items{width:300px;background-color:white;margin:auto;border-radius:5px}input{background-color:transparent;border:transparent;transition:all 0.25s;height:40px;width:200px}button{background-color:transparent;border:transparent;height:42px;width:40px;border-radius:5px;transition:all 0.25s;cursor:pointer}button:hover{background-color:gainsboro}button:active{background-color:lightgray}#reset{width:250px;height:40px;background-color:gainsboro;border-radius:50px;border:transparent}#reset:hover{background-color:lightgray}#reset:active{transform:scale(0.95)}
+      *{font-family:'Poppins', sans-serif;outline:none}body{background-color:blue;text-align:center;font-weight:bold}#name1{font-weight:bolder;font-size:30px;text-align:center;background-color:transparent;border:transparent;height:50px;width:300px;cursor:text;border-bottom:black solid 1px;}#items{width:300px;background-color:white;margin:auto;border-radius:5px}input{background-color:transparent;border:transparent;transition:all 0.25s;height:40px;width:200px}button{background-color:transparent;border:transparent;height:42px;width:40px;border-radius:5px;transition:all 0.25s;cursor:pointer}button:hover{background-color:gainsboro}button:active{background-color:lightgray}#reset{width:250px;height:40px;background-color:gainsboro;border-radius:50px;border:transparent}#reset:hover{background-color:lightgray}#reset:active{transform:scale(0.95)}
     </style>
     <script>
 	    
@@ -36,7 +36,7 @@ document.getElementById("item1").value = localStorage.getItem ("a");document.get
       setInterval(function () {
         localStorage.setItem ("a",document.getElementById("item1").value);localStorage.setItem ("b",document.getElementById("item2").value);localStorage.setItem ("c",document.getElementById("item3").value);localStorage.setItem ("d",document.getElementById("item4").value);localStorage.setItem ("e",document.getElementById("item5").value);localStorage.setItem ("f",document.getElementById("item6").value);localStorage.setItem ("g",document.getElementById("item7").value);localStorage.setItem ("h",document.getElementById("item8").value);localStorage.setItem ("i",document.getElementById("item9").value);localStorage.setItem ("j",document.getElementById("item10").value);localStorage.setItem ("k",document.getElementById("name1").value);
      	var tru = document.getElementById ("name1").value;
-	document.title = tru += " List";
+	document.title = tru += " Shoppping List";
       }, 1);
       
 // -------------------------- //
