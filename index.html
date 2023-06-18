@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+		<title>Simplistic List App</title>
+	</head>
+	<body>
+        <br>
+        <input placeholder="List Name Here..." id = "name1" value = "Unnamed List" />
+        <br>
+        <br>
+		<div id = "items">
+            <input placeholder = "Item 1..." id = "item1" autocomplete="off" /><button onclick = "striket1()"><i class="fa-solid fa-check"></i></button>
+            <input placeholder = "Item 2..." id = "item2" autocomplete="off" /><button onclick = "striket2()"><i class="fa-solid fa-check"></i></button>
+            <input placeholder = "Item 3..." id = "item3" autocomplete="off" /><button onclick = "striket3()"><i class="fa-solid fa-check"></i></button>
+            <input placeholder = "Item 4..." id = "item4" autocomplete="off" /><button onclick = "striket4()"><i class="fa-solid fa-check"></i></button>
+            <input placeholder = "Item 5..." id = "item5" autocomplete="off" /><button onclick = "striket5()"><i class="fa-solid fa-check"></i></button>
+            <input placeholder = "Item 6..." id = "item6" autocomplete="off" /><button onclick = "striket6()"><i class="fa-solid fa-check"></i></button>
+            <input placeholder = "Item 7..." id = "item7" autocomplete="off" /><button onclick = "striket7()"><i class="fa-solid fa-check"></i></button>
+            <input placeholder = "Item 8..." id = "item8" autocomplete="off" /><button onclick = "striket8()"><i class="fa-solid fa-check"></i></button>
+            <input placeholder = "Item 9..." id = "item9" autocomplete="off" /><button onclick = "striket9()"><i class="fa-solid fa-check"></i></button>
+            <input placeholder = "Item 10..." id = "item10" autocomplete="off" /><button onclick = "striket10()"><i class="fa-solid fa-check"></i></button>
+        </div>
+        <br>
+        <button id = "reset" onclick = "reset()">RESET</button>
+    <style>
+      *{font-family:'Poppins', sans-serif;outline:none}body{background-color:violet;text-align:center;font-weight:bold}#name1{font-weight:bolder;font-size:30px;text-align:center;background-color:transparent;border:transparent;height:50px;width:300px;cursor:text}#items{width:300px;background-color:white;margin:auto;border-radius:5px}input{background-color:transparent;border:transparent;transition:all 0.25s;height:40px;width:200px}button{background-color:transparent;border:transparent;height:42px;width:40px;border-radius:5px;transition:all 0.25s;cursor:pointer}button:hover{background-color:gainsboro}button:active{background-color:lightgray}#reset{width:250px;height:40px;background-color:gainsboro;border-radius:50px;border:transparent}#reset:hover{background-color:lightgray}#reset:active{transform:scale(0.95)}
+    </style>
+    <script>
+
+      setInterval(function () {
+        localStorage.setItem ("item1value",document.getElmentById.value);
+        document.getElmentById.value = localStorage.getItem ("item1value");
+     }, 1);
+      
+// -------------------------- //
+
+var enabled1=true;enabled2=true;
+enabled3=true;enabled4=true;
+enabled5=true;enabled6=true;
+enabled7=true;enabled8=true;
+enabled9=true;enabled10=true;
+
+// -------------------------- //
+
+function striket1 () {
+    if (enabled1 === true) {
+        document.getElementById ("item1").style.textDecoration = "line-through";
+        document.getElementById ("item1").disabled = true;
+        enabled1 = false;
+    } else {
+        document.getElementById ("item1").style.textDecoration = "none";
+        document.getElementById ("item1").disabled = false;
+        enabled1 = true;
+    }
+}
+
+// -------------------------- //
+
+function striket2 () {
+    if (enabled2 === true) {
+        document.getElementById ("item2").style.textDecoration = "line-through";
+        document.getElementById ("item2").disabled = true;
+        enabled2 = false;
+    } else {
+        document.getElementById ("item2").style.textDecoration = "none";
+        document.getElementById ("item2").disabled = false;
+        enabled2 = true;
+    }
+}
+
+// -------------------------- //
+
+function striket3 () {
+    if (enabled3 === true) {
+        document.getElementById ("item3").style.textDecoration = "line-through";
+        document.getElementById ("item3").disabled = true;
+        enabled3 = false;
+    } else {
+        document.getElementById ("item3").style.textDecoration = "none";
+        document.getElementById ("item3").disabled = false;
+        enabled3 = true;
+    }
+}
+
+// -------------------------- //
+
+function striket4 () {
+    if (enabled4 === true) {
+        document.getElementById ("item4").style.textDecoration = "line-through";
+        document.getElementById ("item4").disabled = true;
+        enabled4 = false;
+    } else {
+        document.getElementById ("item4").style.textDecoration = "none";
+        document.getElementById ("item4").disabled = false;
+        enabled4 = true;
+    }
+}
+
+// -------------------------- //
+
+function striket5 () {
+    if (enabled5 === true) {
+        document.getElementById ("item5").style.textDecoration = "line-through";
+        document.getElementById ("item5").disabled = true;
+        enabled5 = false;
+    } else {
+        document.getElementById ("item5").style.textDecoration = "none";
+        document.getElementById ("item5").disabled = false;
+        enabled5 = true;
+    }
+}
+
+// -------------------------- //
+
+function striket6 () {
+    if (enabled6 === true) {
+        document.getElementById ("item6").style.textDecoration = "line-through";
+        document.getElementById ("item6").disabled = true;
+        enabled6 = false;
+    } else {
+        document.getElementById ("item6").style.textDecoration = "none";
+        document.getElementById ("item6").disabled = false;
+        enabled6 = true;
+    }
+}
+
+// -------------------------- //
+
+function striket7 () {
+    if (enabled7 === true) {
+        document.getElementById ("item7").style.textDecoration = "line-through";
+        document.getElementById ("item7").disabled = true;
+        enabled7 = false;
+    } else {
+        document.getElementById ("item7").style.textDecoration = "none";
+        document.getElementById ("item7").disabled = false;
+        enabled7 = true;
+    }
+}
+
+// -------------------------- //
+
+function striket8 () {
+    if (enabled8 === true) {
+        document.getElementById ("item8").style.textDecoration = "line-through";
+        document.getElementById ("item8").disabled = true;
+        enabled8 = false;
+    } else {
+        document.getElementById ("item8").style.textDecoration = "none";
+        document.getElementById ("item8").disabled = false;
+        enabled8 = true;
+    }
+}
+
+// -------------------------- //
+
+function striket9 () {
+    if (enabled9 === true) {
+        document.getElementById ("item9").style.textDecoration = "line-through";
+        document.getElementById ("item9").disabled = true;
+        enabled9 = false;
+    } else {
+        document.getElementById ("item9").style.textDecoration = "none";
+        document.getElementById ("item9").disabled = false;
+        enabled9 = true;
+    }
+}
+
+// -------------------------- //
+
+function striket10 () {
+    if (enabled10 === true) {
+        document.getElementById ("item10").style.textDecoration = "line-through";
+        document.getElementById ("item10").disabled = true;
+        enabled10 = false;
+    } else {
+        document.getElementById ("item10").style.textDecoration = "none";
+        document.getElementById ("item10").disabled = false;
+        enabled10 = true;
+    }
+}
+
+// -------------------------- //
+
+function reset () {
+    if(confirm("Are you sure you want to reset your list? This includes all items and list name and can not be undone.")) {
+        document.getElementById ("item1").value = "";document.getElementById ("item2").value = "";document.getElementById ("item3").value = "";document.getElementById ("item4").value = "";document.getElementById ("item5").value = "";document.getElementById ("item6").value = "";document.getElementById ("item7").value = "";document.getElementById ("item8").value = "";document.getElementById ("item9").value = "";document.getElementById ("item10").value = "";document.getElementById ("name1").value = "Unnamed List";
+        document.getElementById ("item1").disabled = false;document.getElementById ("item2").disabled = false;document.getElementById ("item3").disabled = false;document.getElementById ("item4").disabled = false;document.getElementById ("item5").disabled = false;document.getElementById ("item6").disabled = false;document.getElementById ("item7").disabled = false;document.getElementById ("item8").disabled = false;document.getElementById ("item9").disabled = false;document.getElementById ("item10").disabled = false;
+        document.getElementById ("item1").style.textDecoration = "none";document.getElementById ("item2").style.textDecoration = "none";document.getElementById ("item3").style.textDecoration = "none";document.getElementById ("item4").style.textDecoration = "none";document.getElementById ("item5").style.textDecoration = "none";document.getElementById ("item6").style.textDecoration = "none";document.getElementById ("item7").style.textDecoration = "none";document.getElementById ("item8").style.textDecoration = "none";document.getElementById ("item9").style.textDecoration = "none";document.getElementById ("item10").style.textDecoration = "none";
+    } else {
+
+    }
+
+}
+    </script>
+	</body>
+</html>
